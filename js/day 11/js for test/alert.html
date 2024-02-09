@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert Dialog Example</title>
+</head>
+<body>
+    <button onclick="showAlertDialog()">Show Alert Dialog</button>
+
+    <script>
+        function showAlertDialog() {
+            const result = confirm(
+                "This is the message. Do you want to proceed?\n\nYes - Proceed\nNo - Cancel\nNeutral - Do nothing");
+
+            if (result) {
+                console.log("User clicked 'Yes'");
+            } else if (result === false) {
+                console.log("User clicked 'No'");
+            } 
+        }
+    </script>
+</body>
+</html>
